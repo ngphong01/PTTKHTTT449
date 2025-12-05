@@ -1,59 +1,103 @@
-# 🍽️ Hệ Thống Quản Lý Nhà Hàng
 
-Hệ thống quản lý nhà hàng được xây dựng bằng React.js, Tailwind CSS và Node.js với MySQL database.
+# Hệ Thống Quản Lý Nhà Hàng
 
-## 📋 Mục lục
+Hệ thống quản lý nhà hàng được phát triển bằng React.js, Tailwind CSS, Node.js và MySQL.
+Mục tiêu của dự án là hỗ trợ số hóa quy trình vận hành nhà hàng, bao gồm: quản lý bàn, thực đơn, order, bếp, thanh toán và báo cáo doanh thu.
 
-- [Tính năng](#tính-năng)
-- [Công nghệ sử dụng](#công-nghệ-sử-dụng)
-- [Cài đặt](#cài-đặt)
-- [Chạy dự án](#chạy-dự-án)
-- [Cấu trúc dự án](#cấu-trúc-dự-án)
-- [Tài khoản mẫu](#tài-khoản-mẫu)
-- [API Endpoints](#api-endpoints)
+## Mục lục
 
-## ✨ Tính năng
+* Tính năng
+* Công nghệ sử dụng
+* Cài đặt
+* Chạy dự án
+* Cấu trúc dự án
+* Tài khoản mẫu
+* API Endpoints
+* Bản quyền và điều khoản sử dụng
+
+---
+
+## Tính năng
 
 ### 1. Quản lý bàn ăn
-- Xem danh sách tất cả bàn
-- Thêm/sửa/xóa bàn
-- Theo dõi trạng thái bàn: Trống, Đã đặt, Đang phục vụ, Chờ thanh toán
-- Quản lý số ghế và vị trí bàn
+
+* Hiển thị danh sách tất cả bàn trong nhà hàng
+* Thêm, sửa, xóa thông tin bàn
+* Theo dõi trạng thái bàn: trống, đã đặt, đang phục vụ, chờ thanh toán
+* Quản lý số lượng ghế và khu vực bàn ăn
 
 ### 2. Quản lý thực đơn
-- Xem danh sách món ăn theo loại (Món chính, Món phụ, Đồ uống)
-- Thêm/sửa/xóa món ăn
-- Cập nhật giá và trạng thái món (Đang bán/Hết hàng)
-- Lọc món theo loại
 
-### 3. Quản lý Order
-- Tạo order mới cho bàn
-- Thêm/xóa món vào order
-- Xem danh sách order và trạng thái
-- Quản lý số lượng món trong order
+* Xem danh sách món ăn theo từng loại
+* Thêm, cập nhật và xóa món ăn
+* Thay đổi giá bán, hình ảnh và trạng thái món ăn
+* Lọc món theo phân loại
+
+### 3. Quản lý order
+
+* Tạo order mới
+* Thêm hoặc xóa món trong từng order
+* Theo dõi trạng thái order
+* Quản lý số lượng và ghi chú món ăn
 
 ### 4. Quản lý bếp
-- Xem danh sách order đang chờ chế biến
-- Cập nhật trạng thái món: Chờ chế biến → Đang chế biến → Hoàn thành
-- Tự động refresh danh sách order
+
+* Hiển thị danh sách món cần chế biến
+* Cập nhật trạng thái chế biến: chờ, đang chế biến, hoàn thành
+* Tự động cập nhật danh sách yêu cầu mới
 
 ### 5. Thanh toán
-- Xem danh sách order chờ thanh toán
-- Tính toán tổng tiền, giảm giá
-- Hỗ trợ nhiều hình thức thanh toán: Tiền mặt, Thẻ, Chuyển khoản
-- Xuất hóa đơn
+
+* Hiển thị các order đang chờ thanh toán
+* Tính tổng tiền, giảm giá và số tiền cuối cùng
+* Hỗ trợ nhiều hình thức thanh toán: tiền mặt, thẻ, chuyển khoản
+* Xuất hóa đơn và lưu lịch sử thanh toán
 
 ### 6. Báo cáo doanh thu
-- Doanh thu theo ngày
-- Doanh thu theo tháng
-- Top món bán chạy
-- Doanh số theo nhân viên
 
-### 7. Đăng nhập/Phân quyền
-- Hệ thống đăng nhập với phân quyền
-- Quản lý, Phục vụ, Bếp, Thu ngân
+* Báo cáo doanh thu theo ngày
+* Báo cáo doanh thu theo tháng
+* Thống kê món ăn bán chạy
+* Thống kê doanh số theo nhân viên
 
-## 🛠️ Công nghệ sử dụng
+### 7. Đăng nhập và phân quyền
 
-2025
+* Hệ thống đăng nhập theo từng vai trò
+* Phân quyền: quản lý, phục vụ, thu ngân, bếp
+* Giới hạn quyền thao tác theo từng chức vụ
+
+---
+
+## Công nghệ sử dụng
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* Axios
+* React Router
+
+### Backend
+
+* Node.js (Express)
+* MySQL
+* JWT Authentication
+
+### Khác
+
+* RESTful API
+* Môi trường đa nền tảng (Windows / Linux / MacOS)
+
+---
+
+## Bản quyền và điều khoản sử dụng
+
+Năm phát hành: 2025
+Tác giả: Đào Văn Phong
+
+Toàn bộ mã nguồn thuộc quyền sở hữu của tác giả.
+Không cho phép sao chép, chỉnh sửa, phân phối hoặc sử dụng dưới bất kỳ hình thức nào khi chưa có sự đồng ý bằng văn bản của tác giả.
+
+Dự án được cung cấp chỉ với mục đích học tập, nghiên cứu và trình bày trong khuôn khổ môn học.
+Tác giả không chịu bất kỳ trách nhiệm nào đối với rủi ro phát sinh nếu mã nguồn bị sử dụng sai mục đích hoặc gây thiệt hại cho bên thứ ba.
 
