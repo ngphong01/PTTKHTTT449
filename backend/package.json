@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-backend",
+  "version": "1.0.0",
+  "description": "Backend API cho hệ thống quản lý nhà hàng",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "init-db": "node scripts/initDatabase.js",
+    "update-khachhang": "node scripts/updateKhachHangTable.js",
+    "add-taikhoan": "node scripts/addTaiKhoanToKhachHang.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "mysql2": "^3.6.5",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+

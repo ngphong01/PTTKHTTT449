@@ -1,0 +1,21 @@
+{
+  "name": "restaurant-management-system",
+  "version": "1.0.0",
+  "description": "Hệ thống quản lý nhà hàng - Restaurant Management System",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "setup-db": "cd backend && node scripts/initDatabase.js"
+  },
+  "keywords": ["restaurant", "management", "react", "nodejs"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
