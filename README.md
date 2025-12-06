@@ -363,6 +363,11 @@ Mọi đóng góp đều được chào đón! Vui lòng tạo issue hoặc pull
 
 MIT License
 
+⚠️ Miễn trừ trách nhiệm
+
+❗ Lưu ý quan trọng:
+Chúng tôi không chịu trách nhiệm dưới mọi hình thức đối với bất kỳ thiệt hại, mất dữ liệu, lỗi hệ thống hay vấn đề nào phát sinh do việc sử dụng, chỉnh sửa hoặc triển khai dự án này.
+Người dùng hoàn toàn tự chịu trách nhiệm khi vận hành hệ thống.
 ---
 
 **Phát triển bởi:** VanPhong
